@@ -1,0 +1,24 @@
+namespaces:
+  - name: app-41
+  - name: app-42
+  - name: app-43
+  - name: app-44
+  - name: app-45
+  - name: app-46
+  - name: app-47
+  - name: app-48
+  - name: app-49
+  - name: app-50
+  - name: app-51
+  - name: app-52
+  - name: app-53
+  - name: app-54
+  - name: app-55
+  - name: app-56
+  - name: app-57
+  - name: app-58
+  - name: app-59
+  - name: app-60
+
+argo:
+  namespace: openshift-gitops

@@ -1,0 +1,32 @@
+{{- range $key := $.Values.namespaces }}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: {{ $key.name }}
+  namespace: {{ $.Values.argo.namespace }} 
+  labels:
+    name: label-{{ $key.name }}
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: {{ $key.name }}
+      - name: "app.app.instance"
+        value: {{ $.Values.argo.namespace }}
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+{{- end }}  

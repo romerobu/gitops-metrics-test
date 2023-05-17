@@ -1,0 +1,620 @@
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-1
+  namespace: gitops-test 
+  labels:
+    name: label-app-1
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-1
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-2
+  namespace: gitops-test 
+  labels:
+    name: label-app-2
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-2
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-3
+  namespace: gitops-test 
+  labels:
+    name: label-app-3
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-3
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-4
+  namespace: gitops-test 
+  labels:
+    name: label-app-4
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-4
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-5
+  namespace: gitops-test 
+  labels:
+    name: label-app-5
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-5
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-6
+  namespace: gitops-test 
+  labels:
+    name: label-app-6
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-6
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-7
+  namespace: gitops-test 
+  labels:
+    name: label-app-7
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-7
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-8
+  namespace: gitops-test 
+  labels:
+    name: label-app-8
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-8
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-9
+  namespace: gitops-test 
+  labels:
+    name: label-app-9
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-9
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-10
+  namespace: gitops-test 
+  labels:
+    name: label-app-10
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-10
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-11
+  namespace: gitops-test 
+  labels:
+    name: label-app-11
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-11
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-12
+  namespace: gitops-test 
+  labels:
+    name: label-app-12
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-12
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-13
+  namespace: gitops-test 
+  labels:
+    name: label-app-13
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-13
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-14
+  namespace: gitops-test 
+  labels:
+    name: label-app-14
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-14
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-15
+  namespace: gitops-test 
+  labels:
+    name: label-app-15
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-15
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-16
+  namespace: gitops-test 
+  labels:
+    name: label-app-16
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-16
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-17
+  namespace: gitops-test 
+  labels:
+    name: label-app-17
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-17
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-18
+  namespace: gitops-test 
+  labels:
+    name: label-app-18
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-18
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-19
+  namespace: gitops-test 
+  labels:
+    name: label-app-19
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-19
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-20
+  namespace: gitops-test 
+  labels:
+    name: label-app-20
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-20
+      - name: "app.app.instance"
+        value: gitops-test
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

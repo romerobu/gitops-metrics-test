@@ -1,0 +1,620 @@
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-81
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-81
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-81
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-82
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-82
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-82
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-83
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-83
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-83
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-84
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-84
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-84
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-85
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-85
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-85
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-86
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-86
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-86
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-87
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-87
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-87
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-88
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-88
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-88
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-89
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-89
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-89
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-90
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-90
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-90
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-91
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-91
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-91
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-92
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-92
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-92
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-93
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-93
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-93
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-94
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-94
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-94
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-95
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-95
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-95
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-96
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-96
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-96
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-97
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-97
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-97
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-98
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-98
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-98
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-99
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-99
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-99
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+---
+# Source: applications/templates/application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-100
+  namespace: openshift-gitops 
+  labels:
+    name: label-app-100
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+      - name: "app.enabled"
+        value: 'true'
+      - name: "app.app.namespace"
+        value: app-100
+      - name: "app.app.instance"
+        value: openshift-gitops
+    path: .
+    repoURL: 'https://github.com/romerobu/helm-infra-gitops-workshop.git'
+    targetRevision: wip
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

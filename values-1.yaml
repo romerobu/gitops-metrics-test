@@ -1,0 +1,24 @@
+namespaces:
+  - name: app-1
+  - name: app-2
+  - name: app-3
+  - name: app-4
+  - name: app-5
+  - name: app-6
+  - name: app-7
+  - name: app-8
+  - name: app-9
+  - name: app-10
+  - name: app-11
+  - name: app-12
+  - name: app-13
+  - name: app-14
+  - name: app-15
+  - name: app-16
+  - name: app-17
+  - name: app-18
+  - name: app-19
+  - name: app-20
+
+argo:
+  namespace: gitops-test
